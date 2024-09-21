@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGN UP</title>
+</head>
+<body>
+    <h2>SIGN UP</h2>
+    <!-- Fullname,email, password -->
+    <form action="submit_page.php" method="post">
+       
+            <label for="full_name"> Full Name:</label>
+            <input type="text" id="full_name" name="Full Name" required> <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"required> <br> <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="Password"> <br> 
+            <p>Gender:</p>
+            <label><input type="radio" name="gender" value="male">Male</label> <br>
+            <label><input type="radio" name="gender" value="female">Female</label> <br>
+            <label><input type="radio" name="gender" value="others">Others</label> <br>
+          
+          <!-- checkbox -->
+            <p>Skills</p>
+            <label><input type="checkbox" name="interest" value="sports">HTML</label>    
+            <label><input type="checkbox" name="interest" value="music">CSS</label> 
+            <label><input type="checkbox" name="interest" value="movies">JAVASCRIPT</label>
+            <br> <br>
+            <!-- select country-->
+            
+            <label for="country">Select your country:</label> <select id="country" name="country"> <option value="us">United States</option> <option value="ca">Nigeria</option> <option value="uk">China</option> </select>
+            <br> <br>
+            
+            <!-- comment area -->
+            
+            <label for="comments">Bio:<label>
+           <textarea id="comments"     
+           name="comments"rows="4" cols="40"></textarea>
+           
+          <br> <br>
+           <!-- Subscribe -->
+           <label for="subscribe">Subscribe to daily news:</label> <input type="checkbox" id="subscribe" name="subscribe"
+           
+           <br> <br> <br>
+          
+           <!-- submit button-->
+          
+          <input type="submit" value="Submit"> 
+              
+        
+    </form>
+
+</body>
+</html>
